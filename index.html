@@ -16,11 +16,11 @@
 	<header>
 		<h1>Marvel DataBase</h1>
 	</header>
-	<form class="query" ng-submit="searchHero(query)">
-		<input type="text" id="query" ng-model="query" placeholder="Enter the name of the Marvel superhero you're looking for" />
-	</form>
-	<section ng-if="show">
-		<article class="hero">
+	<section>
+		<form class="query" ng-submit="searchHero(query)">
+			<input type="text" id="query" ng-model="query" placeholder="Enter the name of the Marvel superhero you're looking for" />
+		</form>
+		<article class="hero" ng-if="show">
 			<figure class="hero-image">
 				<img src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}" alt="{{hero.name}}" />
 			</figure>

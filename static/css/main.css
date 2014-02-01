@@ -6,13 +6,22 @@ a:hover {
 	text-decoration: underline;
 }
 body {
-	background: #fdfdfd;
 	color: #101010;
+}
+footer,
+header,
+section {
+	left: 0;
+	position: fixed;
+	right: 0;
 }
 footer,
 header {
 	background: #101010;
 	color: orangered;
+}
+footer {
+	bottom: 0;
 }
 footer p {
 	color: #fdfdfd;
@@ -20,11 +29,9 @@ footer p {
 	line-height: 2em;
 	text-align: center;
 }
-form,
-.hero {
-	margin: 1em auto;
+form {
+	margin: 0 auto;
 	max-width: 768px;
-	width: 100%
 }
 h1,
 h2,
@@ -35,6 +42,12 @@ h3 {
 h1 {
 	font-size: 2em;
 	text-align: center;
+}
+header {
+	top: 0;
+}
+html {
+	background: #fdfdfd url(../img/bg.jpg) no-repeat center top;
 }
 img {
 	max-width: 100%
@@ -51,12 +64,6 @@ input {
 	padding: .5em;
 	width: 100%;
 }
-@media screen and (max-width: 768px) {
-	input {
-		margin: 0 auto;
-		width: 95%;
-	}
-}
 input:focus {
 	border-color: orangered;
 	-webkit-box-shadow: 0 0 15px orangered;
@@ -64,10 +71,18 @@ input:focus {
 	box-shadow: 0 0 15px orangered;
 	outline: 0;
 }
+section {
+	bottom: 32px;
+	overflow: auto;
+	padding: 1em 0;
+	top: 48px;
+	width: 100%
+}
 /*
  * Classes
  */
 .hero {
+	background: #fdfdfd;
 	border: 0px solid #101010;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -78,7 +93,8 @@ input:focus {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	margin: 0 auto 1em;
+	margin: 1em auto 0;
+	max-width: 768px;
 	overflow: hidden;
 	padding: 5px;
 	width: 95%;
@@ -113,4 +129,10 @@ input:focus {
 	border-bottom: 1px dashed orangered;
 	color: orangered;
 	margin: 0;
+}
+@media screen and (max-width: 768px) {
+	input {
+		margin: 0 auto;
+		width: 95%;
+	}
 }
