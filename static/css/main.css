@@ -136,3 +136,15 @@ section {
 		width: 95%;
 	}
 }
+
+/*
+ * Autocomplete styles
+ */
+.ui-autocomplete {
+}
+.ui-menu-item,
+.ui-menu-item a {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
