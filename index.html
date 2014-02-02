@@ -13,37 +13,20 @@
 	<link rel="stylesheet" href="lib/jquery-ui-1.10.4.custom.min.css" />
 	<link rel="stylesheet" href="static/css/main.min.css" />
 </head>
-<body ng-controller="baseController">
+<body>
 	<header>
 		<h1>Marvel DataBase</h1>
+		<a href="//github.com/sergiodxa/MarvelDB" class="icon-github" title="Repositorio de Github">
+			<img src="./static/img/icon-github.png" alt="Github" />
+		</a>
 	</header>
 	<section>
-		<form class="query" ng-submit="searchHero(query)">
-			<input type="text" id="query" ng-model="query" placeholder="Enter the name of the Marvel superhero you're looking for" />
-		</form>
-		<article class="hero" ng-if="show">
-			<figure class="hero-image">
-				<img src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}" alt="{{hero.name}}" />
-			</figure>
-			<h2 class="hero-name">
-				{{hero.name}}
-			</h2>
-			<p class="hero-description">
-				{{hero.description}}
-			</p>
-			<div class="hero-events">
-				<h3>List of events where he appears:</h3>
-				<ul class="hero-events-list">
-					<li class="hero-events-list-item" ng-repeat="event in events">
-						{{event.name}}
-					</li>
-				</ul>
-			</div>
-			<p clas="hero-moreinfo">
-				<span>More info in:</span>
-				<a href="{{url.url}}" ng-repeat="url in urls" class="hero-externallink">{{url.type}}</a>
-			</p>
-		</article>
+		<div ng-controller="searchCtrl">
+			<form class="query" ng-submit="searchHero(query)">
+				<input type="text" id="query" ng-model="query" name="query" placeholder="Enter the name of the Marvel superhero you're looking for" />
+			</form>
+		</div>
+		<div ng-view></div>
 	</section>
 	<footer>
 		<p>Developed by <a href="//twitter.com/sergiodxa" title="Follow me in Twitter">@sergiodxa</a> with <a href="http://developer.marvel.com/" title="Marvel Developer Portal">Marvel API</a></p>
@@ -53,7 +36,8 @@
 	<script src="lib/jquery-ui-1.10.4.custom.min.js"></script>
 	<script src="lib/angular.min.js"></script>
 	<script src="lib/angular-route.min.js"></script>
-	<script src="app/controllers/base.min.js"></script>
+	<script src="app/controllers/search.min.js"></script>
+	<script src="app/controllers/hero.min.js"></script>
 	<script src="app/main.min.js"></script>
 </body>
 </html>

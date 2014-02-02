@@ -103,8 +103,6 @@ section {
 	margin: 0;
 	text-align: justify;
 }
-.hero-events {
-}
 .hero-events-list {
 	margin: 0;
 	padding-left: 20px;
@@ -130,6 +128,31 @@ section {
 	color: orangered;
 	margin: 0;
 }
+.icon-github {
+	background: #4183C4;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	display: block;
+	font-size: 0;
+	margin-top: -16px;
+	position: absolute;
+	top: 50%;
+	right: 8px;;
+	width: 32px;
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	transition: .5s all;
+}
+.icon-github:hover {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
 @media screen and (max-width: 768px) {
 	input {
 		margin: 0 auto;
@@ -142,9 +165,7 @@ section {
  */
 .ui-autocomplete {
 }
-.ui-menu-item,
+.ui-menu-item {
+}
 .ui-menu-item a {
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
 }
