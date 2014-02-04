@@ -7,6 +7,7 @@
 
 # THANKS
 
+	Ruben Melo -- Collaborator -- @Menticolcito
 	Google Team by AngularJS
 
 # TECHNOLOGY COLOPHON

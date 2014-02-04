@@ -2,9 +2,9 @@ angular.module('marveldb',['ngRoute'])
 	.config(['$routeProvider', function($routeProvider) {
 		$routeProvider
 			.when('/', {})
-			.when('/hero/:hero', {
-				templateUrl : 'app/views/hero.html',
-				controller	: 'heroCtrl'
+			.when('/character/:character', {
+				templateUrl : 'app/views/character.html',
+				controller	: 'characterCtrl'
 			})
 			.otherwise({
 				redirectTo : '/'

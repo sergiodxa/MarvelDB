@@ -1,0 +1,23 @@
+	<article class="character">
+		<figure class="character-image">
+			<img src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}" alt="{{character.name}}" />
+		</figure>
+		<h2 class="character-name">
+			{{character.name}}
+		</h2>
+		<p class="character-description">
+			{{character.description}}
+		</p>
+		<div class="character-events">
+			<h3>List of events where the character appears:</h3>
+			<ul class="character-events-list">
+				<li class="character-events-list-item" ng-repeat="event in events">
+					{{event.name}}
+				</li>
+			</ul>
+		</div>
+		<p clas="character-moreinfo">
+			<span>More info in:</span>
+			<a href="{{url.url}}" ng-repeat="url in urls" class="character-externallink">{{url.type}}</a>
+		</p>
+	</article>

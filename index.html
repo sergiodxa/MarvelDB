@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="es" ng-app="marveldb">
+<html lang="en" ng-app="marveldb">
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="author" content="" />
-	<meta name="description" content="" />
+	<meta name="author" content="Sergio Xalambrí" />
+	<meta name="description" content="Webapp to find characters in the Marvel database." />
 	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
 	<title>Marvel DataBase</title>
 	<link rel="author" href="humans.txt" type="text/plain" />
@@ -22,8 +22,8 @@
 	</header>
 	<section>
 		<div ng-controller="searchCtrl">
-			<form class="query" ng-submit="searchHero(query)">
-				<input type="text" id="query" ng-model="query" name="query" placeholder="Enter the name of the Marvel superhero you're looking for" />
+			<form class="query" ng-submit="searchCharacter(query)">
+				<input type="text" id="query" ng-model="query" name="query" placeholder="Enter the name of the Marvel character you're looking for" />
 			</form>
 		</div>
 		<div ng-view></div>
@@ -36,8 +36,8 @@
 	<script src="lib/jquery-ui-1.10.4.custom.min.js"></script>
 	<script src="lib/angular.min.js"></script>
 	<script src="lib/angular-route.min.js"></script>
-	<script src="app/controllers/search.min.js"></script>
-	<script src="app/controllers/hero.min.js"></script>
+	<script src="app/controllers/search.js"></script>
+	<script src="app/controllers/character.js"></script>
 	<script src="app/main.min.js"></script>
 </body>
 </html>

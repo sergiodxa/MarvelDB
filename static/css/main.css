@@ -81,7 +81,7 @@ section {
 /*
  * Classes
  */
-.hero {
+.character {
 	background: #fdfdfd;
 	border: 0px solid #101010;
 	-webkit-border-radius: 10px;
@@ -99,31 +99,31 @@ section {
 	padding: 5px;
 	width: 95%;
 }
-.hero-description {
+.character-description {
 	margin: 0;
 	text-align: justify;
 }
-.hero-events-list {
+.character-events-list {
 	margin: 0;
 	padding-left: 20px;
 }
-.hero-externallink {
+.character-externallink {
 	display: inline-block;
 	margin-left: 5px;
 	text-transform: capitalize;
 }
-.hero-image {
+.character-image {
 	float: right;
 	font-size: 0;
 	margin: 0 0 5px 5px;
 	width: 50%;
 }
-.hero-image img {
+.character-image img {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 }
-.hero-name {
+.character-name {
 	border-bottom: 1px dashed orangered;
 	color: orangered;
 	margin: 0;
