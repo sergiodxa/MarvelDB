@@ -5,10 +5,15 @@ function characterCtrl($scope, $routeParams, $http) {
 		character	= $routeParams.character;
 
 	if (localStorage[character]) {
-		var data 	= JSON.parse(localStorage[character]);
-		$scope.character= data.data.results[0];
-		$scope.events 	= data.data.results[0].events.items;
-		$scope.urls 	= data.data.results[0].urls;
+		var data = JSON.parse(localStorage[character]);
+		$scope.character = data.data.results[0];
+		if ($scope.character != undefined) {
+			$scope.events	= data.data.results[0].events.items;
+			$scope.urls		= data.data.results[0].urls;
+		}
+		else {
+			$scope.character = false;
+		}
 	}
 	else {
 		$http({
@@ -20,11 +25,18 @@ function characterCtrl($scope, $routeParams, $http) {
 			}
 		})
 		.success(function(data) {
-			$scope.character	= data.data.results[0];
-			$scope.events 		= data.data.results[0].events.items;
-			$scope.urls 		= data.data.results[0].urls;
-			localStorage.setItem(character, JSON.stringify(data));
-			listOfCharacters();
+			$scope.character = data.data.results[0];
+			if ($scope.character != undefined) {
+				$scope.events	= data.data.results[0].events.items;
+				$scope.urls		= data.data.results[0].urls;
+				$scope.events	= data.data.results[0].events.items;
+				$scope.urls		= data.data.results[0].urls;
+				localStorage.setItem(character, JSON.stringify(data));
+				listOfCharacters();
+			}
+			else {
+				$scope.character = false;
+			}
 		});
 	}
 
