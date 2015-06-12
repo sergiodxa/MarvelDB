@@ -1,17 +1,13 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
-
 # TEAM
 
-	Sergio Daniel Xalambrí -- Developer -- @sergiodxa -- sergio [at] xalambri.com.ar
+	Sergio Daniel Xalambrí -- Developer -- @sergiodxa -- sergio [at] xalambri [dot] com [dot] ar
 
 # THANKS
 
 	Ruben Melo -- Collaborator -- @Menticolcito
-	Google Team by AngularJS
 
 # TECHNOLOGY COLOPHON
 
 	HTML5, CSS3
-	Normalize.css, AngularJS
+	Normalize.css, React.js
 	Marvel API

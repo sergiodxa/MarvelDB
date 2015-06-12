@@ -4,9 +4,8 @@ Webapp to find superheroes in the Marvel database made with [Marvel API](http://
 * Made by: Sergio Daniel Xalambrí
 * Twitter: [@sergiodxa](http://twitter.com/sergiodxa)
 * API version: 1.0
-* Version: 1.4
+* Version: 2.0
 
 ## Libraries
 * Normalize.css
-* AngularJS
-* Modernizr.js
+* React.js
