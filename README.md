@@ -1,4 +1,6 @@
 # MarvelDB
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 Webapp to find superheroes in the Marvel database made with [Marvel API](http://developer.marvel.com/)
 
 * Made by: Sergio Daniel Xalambrí
